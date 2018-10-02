@@ -19,7 +19,7 @@ virtualenv --python=python3.6 .
 source bin/activate
 pip3 install -r requirements.txt
 cd triplestore/sh  
-./run-local.sh
+./run-local.sh &
 cd ../..
 python3 -m script.web.app 8000
 ```
